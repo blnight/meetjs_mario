@@ -1,0 +1,26 @@
+<div class="reveal">
+  <div class="slides problems">
+
+    <section>
+      <h1>$scope.$apply()</h1>
+      <p>Problem</p>
+      <code>
+        setTimeout(function () {<br />
+        &nbsp; &nbsp; // AngularJS unaware of update to $scope<br />
+        }, 2000);
+      </code>
+    </section>
+    <section>
+      <h1>$scope.$apply()</h1>
+      Rozwiązanie<br />
+      <code>
+        setTimeout(function () {<br />
+        &nbsp; &nbsp; $scope.$apply(function () {<br />
+        &nbsp; &nbsp; &nbsp;&nbsp; //Timeout called<br />
+        &nbsp; &nbsp; });<br />
+        }, 2000);
+      </code>
+    </section>
+
+  </div>
+</div>

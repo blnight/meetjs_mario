@@ -1,0 +1,13 @@
+{
+  "name": "FullScreenMario",
+  "homepage": "https://github.com/blnight/FullScreenMario",
+  "_release": "fc9fdd05d3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "mario-presentation",
+    "commit": "fc9fdd05d362f9637380360fb47781696b070e8d"
+  },
+  "_source": "git@github.com:blnight/FullScreenMario.git",
+  "_target": "mario-presentation",
+  "_originalSource": "git@github.com:blnight/FullScreenMario.git"
+}

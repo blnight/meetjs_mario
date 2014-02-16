@@ -1,0 +1,36 @@
+<div class="reveal">
+  <div class="slides problems">
+
+    <section>
+      <h1>Wydajność</h1>
+      <ul>
+        <li>spada przy dużej ilości bindingów</li>
+        <li>można zmniejszyć ich ilośc np. przez paginację</li>
+        <li>ręczne odbindowanie $watch lub np. BindOnce</li>
+        <li>nie używać na widoku skomplikowanych filtrów</li>
+        <li>zamiast <code>$rootScope.$broadcast + $scope.$on</code> lepiej <code>$rootScope.$emit + $rootScope.$on</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Wydajność dyrektyw</h1>
+      <ul>
+        <li>
+          compile
+          <ul>
+            <li>brak $scope</li>
+            <li>uruchamiane raz</li>
+          </ul>
+        </li>
+        <li>
+          link
+          <ul>
+            <li>posiada $scope</li>
+            <li>uruchamiane n razy ng-repeat</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</div>
