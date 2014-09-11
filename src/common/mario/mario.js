@@ -32,7 +32,7 @@ angular.module('mario', [])
           element.load(function(){
             mario.readyResolve();
             window.start();
-            element.contents().find( "body" ).on( "mario_connection", function(eventData) {
+            element.contents().find( 'body' ).on( 'mario_connection', function(eventData) {
               scope.$apply(function() {
                 route.path(eventData.originalEvent.detail);
                 console.log('mario_connection: ', eventData.originalEvent.detail);

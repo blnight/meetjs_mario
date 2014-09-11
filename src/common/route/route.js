@@ -57,7 +57,7 @@ angular.module('meetjs_mario.route', ['ngRoute'])
   $rootScope
     .$on('$routeChangeSuccess', function() {
       //set current route name
-      route.name = _.compact($location.path().split("/"));
+      route.name = _.compact($location.path().split('/'));
       route.params = $routeParams;
       //brodcast event to $rootScope
       $rootScope.$broadcast('routeChangeSuccess');

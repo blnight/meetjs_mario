@@ -8,7 +8,7 @@ module.exports = {
    * completely built.
    */
   build_dir: 'build',
-  compile_dir: 'build',
+  compile_dir: 'bin',
   vendor_dir: 'vendor',
 
   /**
@@ -21,23 +21,17 @@ module.exports = {
    * app's unit tests.
    */
   app_files: {
-
-    js: [
-      'src/app/*.js',
-      'src/app/**/*.js',
-      'src/**/*.js',
-      '!src/**/*.spec.js',
-      '!src/assets/**/*.js'
-    ],
+    js: [ 'src/**/*.module.js','src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js' ],
     jsunit: [ 'src/**/*.spec.js' ],
 
     atpl: [ 'src/app/**/*.tpl.html' ],
     ctpl: [ 'src/common/**/*.tpl.html' ],
 
-    html: [ 'src/index.html' ],
-    css: [
-      'src/css/**/*.css'
-    ]
+    html: [ 'src/index.html' ]
+  },
+
+  build_files: {
+    css: ['<%= build_dir %>/css/sass/*.css', '<%= build_dir %>/css/**/*.css']
   },
 
   /**
@@ -45,7 +39,10 @@ module.exports = {
    */
   test_files: {
     js: [
-      'vendor/angular-latest/src/ngMock/angular-mocks.js'
+      'vendor/angular-mocks/angular-mocks.js'
+    ],
+    mocks: [
+      'mocks/**/*.json'
     ]
   },
 
@@ -69,9 +66,9 @@ module.exports = {
    */
   vendor_files: {
     js: [
-      'vendor/jquery/jquery.js',
-      'vendor/angular-latest/build/angular.js',
-      'vendor/angular-latest/build/angular-route.js',
+      'vendor/jquery/dist/jquery.js',
+      'vendor/angular/angular.js',
+      'vendor/angular-route/angular-route.js',
       'vendor/lodash/dist/lodash.min.js',
       'vendor/reveal.js/js/reveal.js'
     ],

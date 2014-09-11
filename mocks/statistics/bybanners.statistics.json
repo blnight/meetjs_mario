@@ -1,0 +1,28 @@
+[
+  {
+    "id": "name",
+    "name": "Name",
+    "type": ""
+  },
+  {
+    "id": "clicks",
+    "name": "Clicks",
+    "type": ""
+  },
+  {
+    "id": "leads",
+    "name": "Leads",
+    "type": ""
+  },
+  {
+    "id": "customers",
+    "name": "Customers",
+    "type": ""
+  },
+  {
+    "id": "firstTimeDepositors",
+    "name": "First Time Depositors",
+    "type": ""
+  }
+]
+{"clicks":"1459","downloads":"36","customers":"294","firstTimeDepositors":"7","leads":0,"name":"Default"}

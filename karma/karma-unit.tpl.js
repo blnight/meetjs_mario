@@ -11,15 +11,15 @@ module.exports = function ( karma ) {
     files: [
       <% scripts.forEach( function ( file ) { %>'<%= file %>',
       <% }); %>
+      'src/**/*.module.js',
       'src/**/*.js'
     ],
     exclude: [
-      'src/assets/**/*.js',
-      'vendor/SimpleWebRTC/*.js',
-      'src/common/webRtcSupport/webrtcsupport.js'
+      'src/assets/**/*.js'
     ],
     frameworks: [ 'jasmine' ],
-    plugins: [ 'karma-jasmine', 'karma-firefox-launcher', 'karma-chrome-launcher', 'karma-phantomjs-launcher', 'karma-coffee-preprocessor' ],
+    plugins: [ 'karma-jasmine', 'karma-phantomjs-launcher' ],
+    preprocessors: {},
 
     /**
      * How to report, by default.
@@ -31,7 +31,7 @@ module.exports = function ( karma ) {
      * operating, and what is the URL path for the browser to use.
      */
     port: 9018,
-    runnerPort: 9101,
+    runnerPort: 9100,
     urlRoot: '/',
 
     /**
@@ -54,9 +54,7 @@ module.exports = function ( karma ) {
      */
     browsers: [
       'PhantomJS'
-    ],
-    // If browser does not capture in given timeout [ms], kill it
-    captureTimeout: 5000
+    ]
   });
 };
 

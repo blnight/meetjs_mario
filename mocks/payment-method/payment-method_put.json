@@ -1,0 +1,11 @@
+{"errors": {
+  "wiretransferBeneficiary": "Beneficiary must consist of 3 to 128 characters.",
+  "wiretransferBankName": "Bank Name must consist of 3 to 128 characters.",
+  "wiretransferBankAddress": "Bank Address must consist of 3 to 128 characters.",
+  "wiretransferBankCity": "Bank City must consist of 3 to 128 characters.",
+  "wiretransferAccountNumber": "Account Number must be not empty.",
+  "wiretransferBeneficiaryAddress": "Beneficiary Address must consist of 3 to 128 characters.",
+  "wiretransferBeneficiaryCity": "Beneficiary City must consist of 3 to 128 characters.",
+  "wiretransferBeneficiaryZip": "Beneficiary Zip must consist of 3 to 128 characters.",
+  "wiretransferSwift": "SWIFT must be a valid SWIFT format."
+}}

@@ -52,7 +52,7 @@ angular.module('reveal', [])
 
   .run( function ( $rootScope, reveal ) {
     $('body').keydown(function(){
-      if ( event.which == 39 && Reveal.isLastSlide() ) {
+      if ( event.which === 39 && Reveal.isLastSlide() ) {
         $rootScope.$emit('slideshow:finished');
         reveal.promiseResolve();
       }

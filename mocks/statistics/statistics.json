@@ -1,0 +1,35 @@
+[
+  {
+    "id": "name",
+    "name": "Name",
+    "type": ""
+  },
+  {
+    "id": "clicks",
+    "name": "Clicks",
+    "type": ""
+  },
+  {
+    "id": "leads",
+    "name": "Leads",
+    "type": ""
+  },
+  {
+    "id": "customers",
+    "name": "Customers",
+    "type": ""
+  },
+  {
+    "id": "firstTimeDepositors",
+    "name": "First Time Depositors",
+    "type": ""
+  },
+  {
+    "id": "earnings",
+    "name": "Earnings",
+    "type": "amount"
+  }
+]
+{"clicks":"115","downloads":"26","earnings":300,"customers":"27","firstTimeDepositors":"2","leads":0,"name":"CedarFinance"}
+{"clicks":"11","earnings":0,"downloads":0,"customers":"5","leads":0,"firstTimeDepositors":0,"name":"Regal Options"}
+{"earnings":0,"clicks":0,"downloads":0,"leads":0,"customers":0,"firstTimeDepositors":0,"name":"Brokerage Capital"}

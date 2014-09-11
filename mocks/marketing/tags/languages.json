@@ -1,0 +1,34 @@
+[
+  {
+    "tagUrlName": "danish",
+    "tagLabel": "Danish"
+  },
+  {
+    "tagUrlName": "English",
+    "tagLabel": "English"
+  },
+  {
+    "tagUrlName": "French",
+    "tagLabel": "French"
+  },
+  {
+    "tagUrlName": "German",
+    "tagLabel": "German"
+  },
+  {
+    "tagUrlName": "italian",
+    "tagLabel": "Italian"
+  },
+  {
+    "tagUrlName": "japan",
+    "tagLabel": "Japan"
+  },
+  {
+    "tagUrlName": "portugal",
+    "tagLabel": "Portugal"
+  },
+  {
+    "tagUrlName": "russian",
+    "tagLabel": "Russian"
+  }
+]

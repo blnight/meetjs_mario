@@ -5,7 +5,7 @@
 angular.module('meetjs_mario.globals', [])
 
 .value('globals', {
-  "pageTitle": '',
+  'pageTitle': '',
   focus: function() {
     window.focus();
   }

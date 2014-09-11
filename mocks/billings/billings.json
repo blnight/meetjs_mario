@@ -1,0 +1,28 @@
+[
+  {
+    "id": "billingId",
+    "name": "Payout no.",
+    "type": ""
+  },
+  {
+    "id": "createDate",
+    "name": "Issued",
+    "type": "date"
+  },
+  {
+    "id": "status",
+    "name": "Status",
+    "type": ""
+  },
+  {
+    "id": "modifyDate",
+    "name": "Last status change",
+    "type": "date"
+  },
+  {
+    "id": "sum",
+    "name": "Earned",
+    "type": "amount"
+  }
+]
+{"billingId":"2208212","createDate":"2013-11-02 09:23:53","status":"cancelled","modifyDate":"2013-11-02 09:23:53","sum":"0.00"}

@@ -1,7 +1,1 @@
-Install to 'build' folder:
-
-- npm install
-- bower install
-- grunt
-
-Presentation prepared and tested only in Chrome. Still many features missing and not everything might be working.
+[Git Commit Message Conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit)
