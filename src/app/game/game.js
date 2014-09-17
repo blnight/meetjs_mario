@@ -13,13 +13,13 @@ angular.module( 'meetjs_mario.game', [
 .controller( 'GameCtrl', function( $scope, globals, $timeout, route, mario ) {
   globals.pageTitle = 'Game on | meet.js' ;
 
-    mario.ready()
-      .then(
-        function() { //success
-          mario.focus();
-          mario.resume();
-        }
-      );
+  mario.ready()
+    .then(
+      function() { //success
+        mario.focus();
+        mario.resume();
+      }
+    );
 
 })
 

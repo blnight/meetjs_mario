@@ -38,16 +38,16 @@ angular.module( 'meetjs_mario.learned', [
 .controller( 'LearnedCtrl', function( $scope, $rootScope, globals, route, mario, reveal ) {
   globals.pageTitle = 'Learned | meet.js' ;
 
-    mario.ready()
-      .then(function() {
-        mario.pause();
-        globals.focus();
+  mario.ready()
+    .then(function() {
+      mario.pause();
+      globals.focus();
 
-        reveal.start()
-          .then(function() {
-            route.path('/game');
-          });
-      });
+      reveal.start()
+        .then(function() {
+          route.path('/game');
+        });
+    });
 
 })
 

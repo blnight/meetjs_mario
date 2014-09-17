@@ -13,16 +13,16 @@ angular.module( 'meetjs_mario.home', [
 .controller( 'HomeCtrl', function( $scope, $rootScope, globals, route, mario, reveal ) {
   globals.pageTitle = 'Home | meet.js' ;
 
-    mario.ready()
-      .then(function() {
-        mario.pause();
-        globals.focus();
+  mario.ready()
+    .then(function() {
+      mario.pause();
+      globals.focus();
 
-        reveal.start()
-          .then(function() {
-            route.path('/game');
-          });
-      });
+      reveal.start()
+        .then(function() {
+          route.path('/game');
+        });
+    });
 
 
 })

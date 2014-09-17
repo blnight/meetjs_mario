@@ -484,7 +484,7 @@ module.exports = function ( grunt ) {
        */
       compass: {
         files: [ 'src/sass/*.scss' ],
-        tasks: [ 'compass:build', 'beep:error' ]
+        tasks: [ 'compass:build', 'concat:build_css', 'beep:error' ]
       },
 
       /**
@@ -527,7 +527,7 @@ module.exports = function ( grunt ) {
   grunt.registerTask( 'build', [
     'gitHooks', 'clean:all', 'html2js', 'jshint', 'jscs', 'compass:build',
     'copy:build_app_assets', 'copy:build_vendor_assets',
-    'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'copy:mario', 'index:build', 'karmaconfig',
+    'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'concat:build_css', 'copy:mario', 'index:build', 'karmaconfig',
     'karma:continuous'
   ]);
 
