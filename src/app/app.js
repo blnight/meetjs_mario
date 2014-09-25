@@ -28,7 +28,8 @@ angular.module( 'meetjs_mario', [
     $('<img/>')[0].src = src;
   }
   preloadImg('assets/images/feelings_about_angularjs_over_time.png');
-  preloadImg('assets/images/doors.png');
+  preloadImg('assets/images/promise.png');
+  preloadImg('assets/images/meme.jpg');
   preloadImg('assets/images/summary_meme.jpg');
   preloadImg('assets/images/super_mario.png');
   preloadImg('assets/images/karol.png');

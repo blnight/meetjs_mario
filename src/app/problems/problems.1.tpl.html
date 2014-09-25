@@ -2,21 +2,66 @@
   <div class="slides problems">
 
     <section>
-      <h1>Jak strukturyzować aplikację</h1>
+      <h1>How to structure an app?</h1>
       <ul>
-        <li>brak opinii</li>
-        <li>my skorzystaliśmy <strong>ngBoilerplate</strong></li>
-        <li>inne propozycje to np. ngTailor i ngKickstart</li>
+        <li>no official opinion</li>
+        <li>we choose <strong>ngBoilerplate</strong></li>
+        <li>other boilerplates are e.g. <strong>ngTailor</strong> and <strong>ngKickstart</strong></li>
       </ul>
     </section>
 
     <section>
-      <h1>Zalety ngBoilerplate</h1>
+      <h1>ngBoilerplate benefits</h1>
       <ul>
         <li>Grunt, Bower, Karma runner</li>
-        <li>htm2js, ng-min, ui-router</li>
-        <li>biznesowy podział struktury projektu</li>
+        <li>htm2js, ngMin (now ngAnnotate), ui-router</li>
+        <li>business-oriented app structure</li>
       </ul>
+    </section>
+
+    <section>
+      <h1>Folder structure</h1>
+      <p>Instead of</p>
+      <code class="grid">
+        <div class="col-1-2 grid-pad">
+          <strong>controllers</strong>
+          <br />
+          - LoginController.js
+          <br />
+          - RegistrationController.js
+        </div>
+        <div class="col-1-2 grid-pad">
+          <strong>services</strong>
+          <br />
+          - UserService.js
+          <br />
+          - ProductService.js
+        </div>
+      </code>
+    </section>
+    <section>
+      <h1>Folder structure</h1>
+      <p>We use</p>
+      <code class="grid">
+        <div class="col-1-2 grid-pad">
+          <strong>login</strong>
+          <br />
+          - LoginController.js
+          <br />
+          - LoginService.js
+          <br />
+          - loginFilter.js
+        </div>
+        <div class="col-1-2 grid-pad">
+          <strong>cart</strong>
+          <br />
+          - cartController.js
+          <br />
+          - cartService.js
+          <br />
+          - cartFilter.js
+        </div>
+      </code>
     </section>
 
   </div>

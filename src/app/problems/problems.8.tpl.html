@@ -2,15 +2,16 @@
   <div class="slides problems">
 
     <section>
-      <h1>Wycieki pamięci</h1>
+      <h1>memory leaks</h1>
       <ul>
         <li>
-          ręczne odpinaniem eventów<br />
+          manually unbinding events<br />
           <code>
             $scope.$on('$destroy', function () { /* Clean up code */ });
           </code><br/>
         </li>
-        <li>zmiana routingu z UI Router na ngRouter</li>
+        <li>we've tested different routing modules</li>
+        <li>great presentation on the topic by Addy Osmani</li>
       </ul>
     </section>
 

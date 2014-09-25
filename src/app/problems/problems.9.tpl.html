@@ -2,31 +2,31 @@
   <div class="slides problems">
 
     <section>
-      <h1>Wydajność</h1>
+      <h1>Performance</h1>
       <ul>
-        <li>spada przy dużej ilości bindingów</li>
-        <li>można zmniejszyć ich ilośc np. przez paginację</li>
-        <li>ręczne odbindowanie $watch lub np. BindOnce</li>
-        <li>nie używać na widoku skomplikowanych filtrów</li>
-        <li>zamiast <code>$rootScope.$broadcast + $scope.$on</code> lepiej <code>$rootScope.$emit + $rootScope.$on</code></li>
+        <li>drops when there is significant number of bindings</li>
+        <li>don't show all elements at once (e.g. use pagination)</li>
+        <li>use one-time bindings when applicable</li>
+        <li>don't use advanced filters</li>
+        <li>instead of <code>$rootScope.$broadcast + $scope.$on</code> it's better to use <code>$rootScope.$emit + $rootScope.$on</code></li>
       </ul>
     </section>
 
     <section>
-      <h1>Wydajność dyrektyw</h1>
+      <h1>Directives performance</h1>
       <ul>
         <li>
           compile
           <ul>
-            <li>brak $scope</li>
-            <li>uruchamiane raz</li>
+            <li>lack of $scope</li>
+            <li>run once</li>
           </ul>
         </li>
         <li>
           link
           <ul>
-            <li>posiada $scope</li>
-            <li>uruchamiane n razy ng-repeat</li>
+            <li>has $scope</li>
+            <li>run <strong>n</strong> times in ng-repeat</li>
           </ul>
         </li>
       </ul>
