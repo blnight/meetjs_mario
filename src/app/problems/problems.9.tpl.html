@@ -4,11 +4,12 @@
     <section>
       <h1>Performance</h1>
       <ul>
-        <li>performance drops when there is significant number of bindings</li>
+        <li>performance drops when there is significant number of $watches</li>
         <li>don't show all elements at once (e.g. use pagination)</li>
-        <li>use one-time bindings when applicable</li>
+        <li ng-non-bindable>use one-time {{::bindings}} when applicable</li>
         <li>don't use advanced filters</li>
         <li>instead of <code>$rootScope.$broadcast + $scope.$on</code> it's better to use <code>$rootScope.$emit + $rootScope.$on</code></li>
+        <li>In ES7 there will be Object.observe</li>
       </ul>
     </section>
 

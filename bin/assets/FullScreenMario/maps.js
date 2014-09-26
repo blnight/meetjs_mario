@@ -1174,8 +1174,8 @@ function World11(map) {
       pushPreThing(Brick, 898, jumplev1);
 
       pushPreThing(Block, 866, jumplev2, null, null, '/learned/5');
-      pushPreThing(Block, 874, jumplev2, null, null, '/learned/6');
-      pushPreThing(Block, 882, jumplev2, Mushroom, null, '/learned/7');
+      pushPreThing(Block, 874, jumplev2, Mushroom, null, '/learned/6');
+//      pushPreThing(Block, 882, jumplev2, Mushroom, null, '/learned/7');
 
       pushPreFloor(1240, 0, 69);
       pushPreThing(Stone, 1008, 8);
