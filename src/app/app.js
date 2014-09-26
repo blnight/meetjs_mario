@@ -27,12 +27,12 @@ angular.module( 'meetjs_mario', [
   function preloadImg(src) {
     $('<img/>')[0].src = src;
   }
-  preloadImg('assets/images/feelings_about_angularjs_over_time.png');
-  preloadImg('assets/images/promise.png');
-  preloadImg('assets/images/meme.jpg');
-  preloadImg('assets/images/summary_meme.jpg');
   preloadImg('assets/images/super_mario.png');
+  preloadImg('assets/images/feelings_about_angularjs_over_time.png');
+  preloadImg('assets/images/meme.jpg');
   preloadImg('assets/images/karol.png');
+  preloadImg('assets/images/goomba.png');
+  preloadImg('assets/images/star.png');
 })
 
 ;

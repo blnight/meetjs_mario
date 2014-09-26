@@ -43,16 +43,43 @@
   padding: 1em;
 }
 
+.reveal .slides.learned > section:after {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  background: url(images/star.png) no-repeat;
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  margin-left: -56px;
+  background-size: contain;
+}
+
 .reveal .slides.learned > section {
-  background-color: #f7ffe5;
+//  background-color: #f7ffe5;
+  margin-top: 60px;
+}
+
+.reveal .slides.problems > section:after {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  background: url(images/goomba.png) no-repeat;
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  margin-left: -56px;
+  background-size: contain;
 }
 
 .reveal .slides.problems > section {
-  background-color: #fceedc;
+//  background-color: #fceedc;
+  margin-top: 60px;
 }
 
-.reveal .slides>section code
-{
+.reveal .slides>section code {
   float: left;
   text-align: left;
 }
@@ -63,8 +90,8 @@
 
 .reveal .slides>section img
 {
-  max-height: 12em;
-  min-height: 50%;
+  max-height: 11em;
+  min-height: 30%;
 }
 
 ::selection {
